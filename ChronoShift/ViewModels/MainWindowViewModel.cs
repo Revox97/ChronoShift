@@ -1,7 +1,9 @@
-﻿namespace ChronoShift.ViewModels
+﻿using Avalonia.Controls;
+
+namespace ChronoShift.ViewModels
 {
     public partial class MainWindowViewModel : ViewModelBase
     {
-        public string Greeting { get; } = "Welcome to Avalonia!";
+        public Control Content { get; set; } = new TextBox() { Text = "TEST" };
     }
 }
